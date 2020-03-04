@@ -1,0 +1,7 @@
+<!-- {{grupos | json}} -->
+<ul>
+    <li *ngFor="let grupo of grupos" ><a href="#"(click)="grupoClicado.emit(grupo)">
+        {{grupo.desc}}</a></li>
+</ul>
+
+<!-- <button class="btn btn-danger">Entrar!</button> -->

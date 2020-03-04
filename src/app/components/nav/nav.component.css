@@ -1,0 +1,18 @@
+ul{
+    display: flex;
+}
+a{
+    color: white;
+}
+ul li{
+    display: inline;
+   justify-content: space-between;
+}
+li{
+    padding: auto;
+    margin:auto
+}
+nav{
+    display: inline;
+    width:100%;
+}

@@ -1,0 +1,8 @@
+<ul>
+    <li *ngFor="let produto of prod"><a href="#">{{produto.desc}}</a></li>
+</ul>
+<div class="container">
+    <div class="row">
+    <app-produto *ngFor="let p of prod" [produto]="p"></app-produto>
+</div>
+</div>
