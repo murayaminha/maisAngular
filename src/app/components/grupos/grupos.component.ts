@@ -14,7 +14,8 @@ export class GruposComponent implements OnInit {
   public grupos:Grupo[] = []
 
   @Output () grupoClicado = new EventEmitter;
-
+   
+   
   constructor(private http:HttpService) {
   this.http.getGrupos().subscribe(
     (data)=>{
@@ -23,7 +24,6 @@ export class GruposComponent implements OnInit {
       //   (el) => { return this.grupos.push(new Grupo(el.cod, el.desc)) }
       // )
 
-      this.grupos=data
     }
     )
   //  this.grupos.push(new Grupo(1,"Bolas Universo"))
